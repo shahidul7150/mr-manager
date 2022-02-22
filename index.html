@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr.Manager</title>
+    <!-- bootstrap cdn css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- general  css link  -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="text-center mt-3 mb-4 fs-2 fw-bold text-warning"><span class="text-dark">MR.</span>MANAGER</h1>
+    </header>
+    <main class="container">
+        
+        <div class="row row-cols-lg-2 row-cols-md-1  row-cols-1 ">
+           <div>
+            <div >
+                <img class="rounded" src="/images/save.png" alt="" width="100%" height="550px">
+            </div>
+           </div>
+            <div>
+                <div class="input-bg-part text-center py-3">
+                    <!-- income part -->
+                    <div class="mb-3">
+                        <h4 class="text-center">Income</h4>
+                    <p class="fw-bold">Income: <input id="income-input" class="me-3 input-bg border-0 rounded py-1 px-3 " type="text" placeholder="Give your income amount" ></p>
+                   </div>
+                    <!-- expenses part -->
+                    <div class="mb-3  ">
+                        <h4 class="text-center">Expenses</h4>
+                                <!-- alert -->
+                                
+                            <p class="fw-bold">Food: <input id="food-input" type="number" class="input-bg border-0 rounded py-1 px-3" placeholder="Food expenses"></p>
+                            <p class="fw-bold">Rent: <input id="rent-input" type="number" class="input-bg border-0 rounded py-1 px-3" placeholder="Rent expenses"></p>
+                            <p class="fw-bold">Clothes: <input id="clothes-input" type="number" class="me-3 input-bg border-0 rounded py-1 px-3" placeholder="Clothes expenses"></p>
+                            <button id="calculate-btn" class="btn btn-any-color text-white " >Calculate</button>
+                        </div>
+                        <!-- expenses and balance total part  -->
+                        <p id="alert"></p>
+                        <h5>Total Expenses:<span id="expenses-amount">0</span></h5>
+                        <h5>Balance:<span id="balance-amount">0</span></h5>
+
+                        <div>
+                            <!-- saving part      -->
+                            <p class="fw-bold mt-5">Saving: <input id="saving-input" type="number"  class="w-25 text-center input-bg border-0 rounded py-1" placeholder="Savings %" >
+                                 <span class="mx-5">%</span>
+                                <button id="saving-btn" class="btn btn-any-color text-white ">Save</button>   
+                                </p>
+                            </div>
+                            <!-- saving and remaining balance  -->
+                            <h5>Saving Amount:<span id="saving-amount">0</span></h5>
+                            <h5>Remaining Balance:<span id="remain-amount">0</span></h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- main script js add  -->
+    <script src="/js/app.js"></script>
+    <!-- bootstrap script link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
